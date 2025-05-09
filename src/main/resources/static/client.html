@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网页聊天程序</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/client.css">
+</head>
+
+<body>
+
+<div class="cover"></div>
+<!-- 这个div做为整个界面的容器 -->
+<div class="client-container">
+    <!-- 中间的聊天区域 -->
+    <div class="main">
+        <!-- 左侧区域，显示好友列表和回话列表 -->
+        <div class="left">
+            <!-- 当前登录用户的用户名 -->
+            <div class="user" >
+
+            </div>
+            <!-- 这是搜索框 -->
+            <div class="search">
+                <!-- 搜索框里面的输入框 -->
+                <input type="text">
+                <!-- 点击按钮进行搜索 -->
+                <button></button>
+            </div>
+            <!-- 标签页 -->
+            <div class="tab">
+                <!-- 会话列表标签 -->
+                <div class="tab-session"></div>
+                <!-- 好友列表标签 -->
+                <div class="tab-friend"></div>
+            </div>
+            <!-- 会话列表 -->
+            <ul class="list" id="session-list">
+
+
+                <li>
+                    <h3>表哥</h3>
+                    <p>我一把过的</p>
+                </li>
+
+            </ul>
+            <!-- 好友列表 -->
+            <ul class="list hide" id="friend-list">
+                <li>
+                    <h4>lisi</h4>
+
+                </li>
+
+                <li>
+                    <h4>lisi</h4>
+
+                </li>
+                <li>
+                    <h4>lisi</h4>
+
+                </li>
+                <li>
+                    <h4>lisi</h4>
+
+                </li>
+            </ul>
+        </div>
+        <!-- 右侧区域，显示聊天编辑框 -->
+        <div class="right">
+            <!-- 会话标题 -->
+            <div class="title"></div>
+            <!-- 消息区 -->
+            <div class="message-show">
+
+                <!-- <div class="message message-left">
+
+                    <div class="box">
+                       <h4>表哥</h4>
+                       <p>我四级考五次没过</p>
+                    </div>
+                </div>
+
+                 <div class="message message-right">
+
+                    <div class="box">
+                       <h4>我</h4>
+                       <p>我一把过的</p>
+                    </div>
+                 </div> -->
+            </div>
+            <!-- 消息编辑框 -->
+            <textarea class="message-input"></textarea>
+            <!--发送按钮  -->
+            <div class="ctrl">
+                <button>发送</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 引入 jquery, 注意, 这个引入操作要在使用之前! 否则会找不到相关函数的定义 -->
+<script  src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="js/client.js"></script>
+</body>
+
+</html>
